@@ -1,0 +1,242 @@
+body{
+  font-family: 'Muli', sans-serif;
+  padding-top: 3.375rem;
+  color: #6c757d;
+}
+@media (min-width:992px) {
+  body{
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #feae96 !important;
+  background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+
+  /* This will show the gradient as a text color rather than element bg. */
+  /* Use the text as a mask for the background. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+h1{
+  line-height: 1;
+  font-size: 6rem;
+  font-weight: 700;
+}
+h2{
+  line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Saira Extra Condensed',sans-serif;
+}
+h3{
+  font-family: "Saira Extra Condensed", sans-serif;
+  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 700;
+}
+p.lead{
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading{
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.subheading a:hover{
+  opacity: 0.6;
+  position: absolute;
+   bottom: 2px;
+   left: 0;
+   height: 1px;
+   width: 100%;
+
+}
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+/* Class */
+.bg-primary{
+background-color: #feae96 !important;
+background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+}
+         /* Navbar */
+#sideNav .navbar-nav .nav-item .nav-link{
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus{
+  outline-color: #fe0944;
+}
+
+@media(min-width: 992px){
+  #sideNav{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand{
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile{
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255,255,255,0.2);
+  }
+  #sideNav .navbar-collapse{
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav{
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item{
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{
+    display: block;
+  }
+}
+
+/* Blockquote */
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  background-color: #fe0944;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+  /* Social-icons */
+.social-icons .social-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child{
+  margin-right: 0;
+}
+.social-icons .social-icon:hover{
+  background-color: #fe0944;
+  text-decoration: none;
+}
+.dev-icons {
+  font-size:3rem;
+}
+
+/* Resume Section */
+section.resume-section{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-section-content{
+  width:100%;
+}
+section.resume-section .resume-section-content h1{
+  font-family: "Saira Extra Condensed", sans-serif;
+
+  line-height: 1.2;
+  color: #343a40;
+}
+
+@media (min-width:768px){
+  section.resume-section{
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px){
+  section.resume-section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+/* Projects */
+
+.bg-img-default {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+
+
+/* #portfolio{ padding: 100px 0;} */
+section.resume-section .resume-section-content .port-item{
+  height: 200px;
+  position: relative;
+
+}
+
+section.resume-section .resume-section-content .port-item > * {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+section.resume-section .resume-section-content .port-item::before{
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 0;
+  transition: background-color .3s;
+}
+
+section.resume-section .resume-section-content .port-item:hover * {opacity: 1;}
+section.resume-section .resume-section-content .port-item:hover::before{background-color: rgba(39, 39, 39, .7); }
+@media (max-width: 992px) {
+  section.resume-section .resume-section-content .port-item {height: 500px;}
+}
